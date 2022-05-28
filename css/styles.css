@@ -311,6 +311,8 @@ fill: var(--accent-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Modal window */
+
 .backdrop.is-hidden{
   opacity: 0;
   pointer-events: none;
@@ -321,12 +323,16 @@ fill: var(--accent-color);
   position: absolute;
   top: 50%;
   left: 50%;
+padding: 40px;
 
   transform: translate(-50%, -50%);
   
   background-color: var(--background-color);
   width: 528px;
   height: 581px;
+
+ 
+  /* outline: 2px solid tomato; */
 }
 
 .modal-btn{
@@ -348,12 +354,69 @@ fill: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--background-color); 
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 .modal-btn-icon{
   fill: #000000;
 }
+
+.modal-watchword{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+
+  width: 448px; 
+  display: block;
+  margin-bottom: 12px; 
+  outline: 2px solid tomato;
+}
+
+.modal-wrapper-form{
+
+  height: 100%;
+  outline: 2px solid tomato;
+}
+
+
+
+.form-label{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  display: block;
+
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.agreement-form-group{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7; 
+  letter-spacing: 0.03em;
+
+  margin-left: 9px;
+}
+
+.agreement-section{
+  display: flex;
+  flex-direction: row;
+
+  align-items: baseline;
+  outline: 2px solid tomato;
+}
+
 
 .features-section{
   /* outline: 2px solid tomato; */

@@ -51,8 +51,52 @@
               <div class="container">
                 <h1 class="hero-slogan">Эффективные решения для вашего бизнеса</h1>
                 <button class="order-btn" type="button" data-modal-open>Заказать услугу</button>
+
                 <div class="backdrop is-hidden" data-modal>
                   <div class="modal-wrapper">
+                      
+                    <b class="modal-watchword">Оставьте свои данные, мы вам перезвоним</b>
+
+                    <div role="group" class="modal-wrapper-form">
+
+
+                      <form class="contact-form" name="contact-form" action="./js/method.js" method="post">
+
+
+                        <label class="form-group" for="user-name">
+                        <span class="form-label">Имя</span>
+                        </label>
+                        <input type="text" name="user-name" id="user-name" autofocus/>
+
+                        <label class="form-group" for="user-tel">
+                        <span class="form-label">Телефон</span>
+                        </label>
+                        <input type="tel" name="tel" id="user-tel"/>
+
+                        <label class="form-group" for="user-mail">
+                        <span class="form-label">Почта</span>
+                        </label>
+                        <input type="email" name="mail" id="user-mail"/>
+
+                        <label class="form-group" for="Comment">
+                        <span class="form-label">Комментарий</span>
+                        </label>
+                        <textarea name="Комментарий" id="Comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                        
+                        <div class="agreement-section">
+                          <input type="checkbox" value="" id="user-agreement">
+                          <label class="agreement-form-group" for="user-agreement">Соглашаюсь с рассылкой и принимаю  <span href="#">Условия договора</span>
+                        </label>
+                        </div>
+                        <br>
+                         <button type="submit">Отправить</button>
+                         <br/>
+                         
+                      </form>    
+
+                      </div>
+
+
                     <button class="modal-btn" data-modal-close><svg class="modal-btn-icon"  width="11" height="11"> <use href="./images/sprite.svg#icon-modal-btn"></use></svg></button>
                   <form class="modal-form"></form>
                   </div>
@@ -295,5 +339,6 @@
       </footer>  
       
       <script src="./js/modal.js"></script>
+
     </body>
 </html>
