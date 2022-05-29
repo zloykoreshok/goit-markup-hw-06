@@ -376,8 +376,7 @@ padding: 40px;
 }
 
 .modal-wrapper-form{
-  height: 100%;
-
+  
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -385,25 +384,65 @@ padding: 40px;
   outline: 2px solid tomato;
 }
 
-
-
 .form-label{
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
 
+  margin-bottom: 4px;
+
   display: block;
-
-
 }
 
 .form-input{
-  
+  font-family: 'Roboto', 'Sans-Serif';
+  font-size: 14px;
+  letter-spacing: 0.02em;
+    
+
+  display: block;
+  margin-bottom: 10px;
+  height: 40px;
   width: 100%;
-  resize: none
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  
 }
 
+.text-form-input{
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  /* color: rgba(117, 117, 117, 0.5); */
+
+  height: 120px;
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: 2px solid tomato;
+}
+
+.agreement-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  
+  outline: 2px solid tomato;
+}
+
+.form-checkbox{
+  display: block;
+}
 
 .agreement-form-group{
   font-weight: 400;
@@ -412,15 +451,44 @@ padding: 40px;
   letter-spacing: 0.03em;
 
   margin-left: 9px;
+
+  display: block;
 }
 
-.agreement-section{
-  display: flex;
-  flex-direction: row;
-
-  align-items: baseline;
-  outline: 2px solid tomato;
+.agreement-phrase{
+  color: var(--accent-color);
+  
+  text-decoration-line: underline;
 }
+
+
+
+.submit-btn{
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  
+  width: 200px;
+  height: 50px;
+
+  margin: auto;
+   letter-spacing: 0.06em;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--background-color);
+  background-color:var(--accent-color);
+
+}
+
 
 
 
