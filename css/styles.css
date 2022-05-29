@@ -384,6 +384,13 @@ padding: 40px;
   outline: 2px solid tomato;
 }
 
+.form-group{
+display: block;
+position: relative;
+
+
+}
+
 .form-label{
   font-weight: 400;
   font-size: 12px;
@@ -402,6 +409,7 @@ padding: 40px;
     
 
   display: block;
+  padding: 11px 42px;
   margin-bottom: 10px;
   height: 40px;
   width: 100%;
@@ -409,6 +417,15 @@ padding: 40px;
   border-radius: 4px;
   
 }
+
+.form-icon{
+position: absolute;
+top: 50%;
+left: 12px;
+
+fill: var(--title-text-color);
+}
+
 
 .text-form-input{
 
@@ -456,12 +473,22 @@ padding: 40px;
 }
 
 .agreement-phrase{
-  color: var(--accent-color);
-  
+  color: var(--accent-color); 
   text-decoration-line: underline;
 }
 
+.custom-checkbox{
+display: flex;
+width: 16px;
+height: 15px;
+align-items: center;
+justify-content: center;
+border-radius: 2px;
+outline: 2px solid var(--accent-color);
 
+}
+
+.custom-checkbox-icon
 
 .submit-btn{
   
@@ -477,9 +504,9 @@ padding: 40px;
   margin: auto;
    letter-spacing: 0.06em;
 
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border: none;
   border-radius: 4px;
