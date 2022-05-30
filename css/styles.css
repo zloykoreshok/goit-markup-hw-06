@@ -388,7 +388,6 @@ padding: 40px;
 display: block;
 position: relative;
 
-
 }
 
 .form-label{
@@ -842,15 +841,18 @@ fill: var(--background-color);
 .footer-info-container{
   display: flex;
   align-items: baseline;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 .footer-adress{
   margin-right: 70px;
 }
 
+/* footer inviatation */
+
 .footer-invitation{
  margin: 0;
+ outline: 2px solid tomato;
 }
 
 .invitation-row{
@@ -906,6 +908,64 @@ fill: var(--background-color);
 .footer-link:hover, 
 .footer-link:focus{
   color: var(--accent-color);
+}
+
+/* footer send-message division */
+
+.footer-call{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: auto;
+  
+  outline: 2px solid tomato;
+
+}
+
+.footer-form-input{
+  font-family: 'Roboto', 'Sans-Serif';
+  font-size: 14px;
+  letter-spacing: 0.02em;
+    
+
+  display: block;
+  padding: 11px 42px;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px; 
+}
+
+.footer-btn{
+  font-family: 'Roboto', 'Sans-Serif';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 0;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 10px 28px;
+  cursor: pointer;
+  
+  display: flex;
+
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+
+.icon-send{
+
+  fill: #FFFFFF;
+  margin-left: 10px;
+
+}
+
+.footer-email{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 /* portfolio.html page */
