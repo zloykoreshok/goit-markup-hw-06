@@ -509,9 +509,18 @@ fill: var(--accent-color);
 .checkbox{
 position: absolute;
 margin-left: 12px;
-  opacity: 0;
+
+  /* opacity: 0; */
+  /* visibility: hidden; */
 
 }
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+
 
 .agreement-form-group{
   font-weight: 400;
