@@ -501,8 +501,16 @@ fill: var(--accent-color);
   /* outline: 2px solid tomato; */
 }
 
+.phrase{
+  position: relative;
+  /* outline: 2px solid tomato */
+}
+
 .checkbox{
+position: absolute;
+margin-left: 12px;
   opacity: 0;
+
 }
 
 .agreement-form-group{
