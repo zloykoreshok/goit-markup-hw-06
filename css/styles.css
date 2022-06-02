@@ -297,7 +297,7 @@ fill: var(--accent-color);
 /* Modal form */
 
 .backdrop{
-  position: fixed;
+  position: fixed;  
   top: 0;
   left: 0;
   width: 100%;
@@ -347,21 +347,35 @@ fill: var(--accent-color);
 
   border: none;
   cursor: pointer;
-
+  outline: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: var(--background-color); 
+  background-color: var(--background-color);
+  
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* outline: 2px solid tomato; */
 }
 
 .modal-btn-icon{
+  position: relative;
   fill: #000000;
 }
 
-.modal-btn-icon:hover,
-.modal-btn-icon:focus{
-  fill: var(--accent-color);
+.modal-btn:hover,
+.modal-btn:focus{
+  border: 1px solid var(--accent-color);
 }
+
+.modal-btn:hover  .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon{
+  fill: var(--accent-color);
+  
+}
+
+
+
 
 
 .modal-watchword{
@@ -430,9 +444,9 @@ fill: var(--accent-color);
 
 .form-icon{
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 12px;
-
+  transform: translateY(-50%);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -462,7 +476,7 @@ fill: var(--accent-color);
   height: 120px;
   width: 100%;
   padding: 12px 16px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   display: block;
   resize: none;
 
@@ -525,7 +539,7 @@ fill: var(--accent-color);
   justify-content: center;
 
   border-radius: 2px;
-  outline: 2px solid var(--accent-color);
+  outline: 2px solid var(--title-text-color);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -549,6 +563,7 @@ fill: var(--accent-color);
 .checkbox:focus + .custom-checkbox,
 .checkbox:hover + .custom-checkbox{
   border: 1px solid var(--accent-color);
+  outline: 2px solid var(--accent-color);
 }
 
 .submit-btn{    
